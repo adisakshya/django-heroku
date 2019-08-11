@@ -53,35 +53,37 @@ Heroku is a contained-based cloud platform for deploying, managing, and scalling
     ```
   - This will allow us to keep using our local SQLite database while using Heroku’s database there.
 
-- Step 7: Setup Heroku
+- Step 7: Update Middleware for whitenoise v4.0
+  - In settings.py, update MIDDLEWARE object for whitenoise v4.0
+  - Add ```whitenoise.middleware.WhiteNoiseMiddleware``` just below ```django.middleware.security.SecurityMiddleware```
+
+- Step 8: Setup Heroku
   - Install Heroku CLI
   - Create free Heroku account
 
-- Step 8: Heroku Login
+- Step 9: Heroku Login
   - After you are done with above steps, run the following command ```heroku login``` on your terminal
 
-- Step 9: Create Heroku Application
+- Step 10: Create Heroku Application
   - After successful login run following command to create a new app on heroku ```heroku create <your-app-name>```
   - You can also run ```heroku create``` and Heroku will give your application a random name
 
-- Step 10: Add and Commit
+- Step 11: Add and Commit
   - Run following commands on your terminal ```git add .``` and,
   - ```git commit -m 'your-cimmit-message```
 
-- Step 11: Push
+- Step 12: Push
   - Finally, you can deploy to Heroku by running ```git push heroku master``` on your terminal.
 
-- Step 12: Start Web Process
+- Step 13: Start Web Process
   - You can tell Heroku to start this web process by running ```heroku ps:scale web=1``` on your terminal.
 
-- Step 13: Run Migrations
+- Step 14: Run Migrations & create super-user
   - Since we created a new/empty database on Heroku, we will run migrations.
   - On your terminal, enter ```heroku run python manage.py migrate``` 
+  - After that, create a django admin superuser ```heroku run python manage.py createsuperuser```.
 
-- Step 14: Create SuperUser
-  - Create a django admin superuser ```heroku run python manage.py createsuperuser```.
-
-- Step 15: Checkout
+- Step 16: Checkout
   - You can now visit your app in your browser by running ```heroku open``` command on the terminal.
 
 That's it !

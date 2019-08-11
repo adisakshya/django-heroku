@@ -83,7 +83,7 @@ Heroku is a contained-based cloud platform for deploying, managing, and scalling
   - On your terminal, enter ```heroku run python manage.py migrate``` 
   - After that, create a django admin superuser ```heroku run python manage.py createsuperuser```.
 
-- Step 16: Checkout
+- Step 15: Checkout
   - You can now visit your app in your browser by running ```heroku open``` command on the terminal.
 
 That's it !

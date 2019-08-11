@@ -1,13 +1,49 @@
 # django-heroku
-This repository contain a django application template hosted on Heroku cloud following latest builds !
+This repository contain a django application template hosted on Heroku cloud following latest whitenoise v4.0 !
 
-link to application: [demo-django-heroku.herokuapp.com](https://demo-django-heroku.herokuapp.com/)
+Link to application: [demo-django-heroku.herokuapp.com](https://demo-django-heroku.herokuapp.com/)
 
 ## Heroku Cloud
 
 Heroku is a contained-based cloud platform for deploying, managing, and scalling applications. Even though there are other similar platforms, such as OpenShift by Red Hat, Windows Azure, Amazon Web Services, Google App Engine e.t.c, Heroku stands out because it is pretty basic and very easy to work with. It also comes with a free package for small apps.
 
 ## Deploying Django Application on heroku cloud
+
+- Project Directory Structure to be followed
+```
+.
+├── ./README.md
+├── ./LICENSE
+├── ./.gitignore
+├── ./db.sqlite3
+├── ./manage.py
+├── ./my_app
+│   ├── ./my_app/admin.py
+│   ├── ./my_app/apps.py
+│   ├── ./my_app/forms.py
+│   ├── ./my_app/__init__.py
+│   ├── ./my_app/migrations
+│   ├── ./my_app/models.py
+│   ├── ./my_app/static
+│   │   └── ./my_app/static/my_app
+│   │       ├── ./my_app/static/my_app/custom.css
+│   │       ├── ./my_app/static/my_app/custom.js
+│   │       └── ./my_app/static/my_app/images
+│   ├── ./my_app/templates
+│   ├── ./my_app/tests.py
+│   ├── ./my_app/urls.py
+│   └── ./my_app/views.py
+├── ./Procfile
+├── ./my_project
+│   ├── ./my_project/__init__.py
+│   ├── ./my_project/local_settings.py
+│   ├── ./my_project/production_settings.py
+│   ├── ./my_project/settings.py
+│   ├── ./my_project/urls.py
+│   └── ./my_project/wsgi.py
+├── ./requirements.txt
+└── ./runtime.txt
+```
 
 - Getting Started
   - Activate virtual-env for your django project and run ```pip install dj-database-url gunicorn whitenoise```

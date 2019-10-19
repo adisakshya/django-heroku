@@ -106,7 +106,7 @@ Heroku is a contained-based cloud platform for deploying, managing, and scalling
 
 - Step 11: Add and Commit
   - Run following commands on your terminal ```git add .``` and,
-  - ```git commit -m 'your-cimmit-message```
+  - ```git commit -m 'your-commit-message```
 
 - Step 12: Push
   - Finally, you can deploy to Heroku by running ```git push heroku master``` on your terminal.

@@ -1,8 +1,6 @@
 # django-heroku
 This repository contain a django application template hosted on Heroku cloud following latest whitenoise v4.0 !
 
-Link to application: [demo-django-heroku.herokuapp.com](https://demo-django-heroku.herokuapp.com/)
-
 ## Heroku Cloud
 
 Heroku is a contained-based cloud platform for deploying, managing, and scalling applications. Even though there are other similar platforms, such as OpenShift by Red Hat, Windows Azure, Amazon Web Services, Google App Engine e.t.c, Heroku stands out because it is pretty basic and very easy to work with. It also comes with a free package for small apps.
